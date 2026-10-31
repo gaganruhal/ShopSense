@@ -1,42 +1,97 @@
-# 🛍️ ShopSense — E-commerce Sales Analytics Dashboard
+# 🛍️ ShopSense 2.0 — E-commerce Sales Analytics Dashboard
 
-ShopSense is a Python-based dashboard designed to explore e-commerce sales data and understand business performance through data analysis and visualizations.
+**ShopSense 2.0** is an interactive e-commerce data analytics dashboard built using Python, Pandas, SQL, SQLite and Streamlit.
 
-## 🚀 Features
+It helps users upload e-commerce datasets, clean data, perform SQL analysis, identify business insights and generate downloadable reports through a single dashboard.
 
-* **Sales Analysis:** Explore sales and revenue trends.
-* **Category Analysis:** Compare sales and profit across product categories.
-* **Business Insights:** Review data-driven insights and recommendations.
-* **Interactive Dashboard:** Navigate analytics through a Streamlit interface.
-* **SQL Analysis:** Use SQL queries to analyze e-commerce data.
-* **Data Visualization:** Present key metrics and trends using charts.
+The project focuses on making data analysis easier, more interactive and useful for understanding business performance.
+
+## 🚀 Key Features
+
+### 📂 1. CSV Upload & Data Preview
+
+* Upload your own CSV datasets.
+* Preview uploaded data.
+* Explore dataset columns and records.
+* Work with your active dataset.
+
+### 🧹 2. Data Cleaning Workspace
+
+* Identify missing values.
+* Detect duplicate records.
+* Explore data quality issues.
+* Perform data cleaning operations.
+
+### 💻 3. SQL Workspace
+
+* Run SQL queries on the active dataset.
+* Explore and analyze data using SQL.
+* View query results directly in the dashboard.
+
+### 📊 4. Data Quality Report
+
+* Analyze missing values and duplicate records.
+* View column-wise data quality information.
+* Understand the overall condition of your dataset.
+
+### 💡 5. Smart Business Insights
+
+* Sales channel performance analysis.
+* Customer analysis and customer snapshots.
+* Top 10 customers by revenue.
+* Rule-based business observations.
+* Downloadable customer and sales channel reports.
+
+### 📥 6. Export Center
+
+* Download the currently filtered dataset.
+* Export category and monthly summaries.
+* Export product, customer and sales channel reports.
+* Download column quality profiles.
+* Download all reports together in a ZIP file.
+
+### 🎨 7. User Interface
+
+* Interactive Streamlit dashboard.
+* Light and Dark appearance modes.
+* Responsive layout for smaller screens.
+* Navigation across different analytics workspaces.
 
 ## 🛠️ Tech Stack
 
-* Python
-* Pandas
-* SQL
-* SQLite
-* Streamlit
-* Matplotlib
+| Technology | Purpose                        |
+| ---------- | ------------------------------ |
+| Python     | Core programming               |
+| Pandas     | Data manipulation and analysis |
+| SQL        | Data querying                  |
+| SQLite     | Database management            |
+| Streamlit  | Interactive dashboard          |
+| Matplotlib | Data visualization             |
 
 ## 📁 Project Structure
 
 ```text
 ShopSense/
+│
 ├── app.py
 ├── main.py
 ├── setup_database.py
 ├── sql_analysis.py
 ├── sql_analytics.py
+│
 ├── requirements.txt
 ├── shopsense_sample_ecommerce.csv
+│
 ├── category_profit.csv
 ├── category_sales.csv
-└── data.csv
+├── data.csv
+│
+├── PHASE5_NOTES.txt
+├── PHASE6_NOTES.txt
+└── PHASE7_NOTES.txt
 ```
 
-## ⚙️ Installation and Setup
+## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 
@@ -45,28 +100,24 @@ git clone https://github.com/gaganruhal/ShopSense.git
 cd ShopSense
 ```
 
-### 2. Create a virtual environment (recommended)
+### 2. Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it on Windows:
+### 3. Activate the environment
+
+For Windows:
 
 ```bash
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 4. Set up the database
-
-```bash
-python setup_database.py
 ```
 
 ### 5. Run the dashboard
@@ -75,19 +126,46 @@ python setup_database.py
 streamlit run app.py
 ```
 
-The dashboard should open in your browser.
+The dashboard will open in your default web browser.
 
-## 🎯 Project Goal
+## 📈 Sample Dataset
 
-The goal of ShopSense is to practice Python programming, data analysis, SQL querying, and data visualization while turning raw e-commerce data into useful business insights.
+The project includes a sample e-commerce dataset for exploring sales, products, customers, orders and business performance.
+
+You can also upload your own CSV dataset and use the available analysis and reporting features.
+
+## 🎯 Project Objectives
+
+* Apply Python programming to real-world style data analysis.
+* Understand data cleaning and preprocessing.
+* Practice SQL queries and database operations.
+* Build interactive data visualizations.
+* Generate meaningful business insights from datasets.
+* Develop an end-to-end data analytics project.
+
+## 🔮 Future Improvements
+
+* Advanced customer segmentation.
+* More interactive visualizations.
+* Additional business performance metrics.
+* Sales forecasting and predictive analytics.
+* Support for more data sources.
 
 ## 👨‍💻 Author
 
 **Gagan Ruhal**
 
-GitHub: [@gaganruhal](https://github.com/gaganruhal)
+B.Tech — Artificial Intelligence & Machine Learning
 
+* GitHub: https://github.com/gaganruhal
+* Project Repository: https://github.com/gaganruhal/ShopSense
 
-## Phase 6 — Export Center
+## 🌐 Live Demo
 
-The Export Center lets you download the filtered active dataset, business summary reports, a column quality profile, and a ZIP bundle containing all exports. Exports are generated in memory and do not overwrite the source CSV or SQLite database.
+**Try ShopSense here:**
+
+https://shopsense-dashboard.streamlit.app/
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
