@@ -1,0 +1,17 @@
+ShopSense 2.0 — Phase 6: Export Center
+
+New additions:
+- Export the currently filtered active dataset as CSV.
+- Export category summary, monthly summary, product performance, customer summary, and sales-channel summary as CSV files.
+- Export a column quality profile and a compact quality summary.
+- Download all exports together in one ZIP bundle.
+- Export generation is in-memory; the source CSV and SQLite database are not overwritten.
+- All exports use the active dataset and current sidebar filters.
+
+Run from this folder in PowerShell:
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+
+Validation:
+- app.py passes Python syntax compilation.
+- The Streamlit interface was not independently launched end-to-end in this build environment; please test the page locally.

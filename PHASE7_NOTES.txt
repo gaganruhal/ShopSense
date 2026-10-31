@@ -1,0 +1,13 @@
+ShopSense 2.0 — Phase 7 UI polish notes
+
+Changes:
+- Added an in-app Light/Dark appearance selector in the sidebar.
+- Added responsive CSS for narrow screens, headings, metrics, inputs, tables and buttons.
+- Added dark-theme overrides for the app background, cards, text, inputs, selectors, alerts and sidebar.
+- Preserved the existing Phase 1–6 features and project files.
+
+Important testing notes:
+- Python syntax is checked before delivery.
+- This environment does not perform a full interactive browser/device test of the Streamlit app.
+- Please verify on desktop and a mobile-sized browser viewport, including all navigation pages, filters, uploads, SQL queries and downloads.
+- Streamlit widgets/charts can vary by Streamlit version; report any element that remains unreadable or overflows.

@@ -1,0 +1,16 @@
+ShopSense 2.0 — Phase 5: Smart Business Insights & Recommendations
+
+New additions on the existing Business Insights & Recommendations page:
+- Sales channel summary: orders, revenue, profit and profit margin
+- Customer snapshot: unique customers, repeat customers and average order value
+- Top 10 customers by revenue
+- Rule-based observations based on the current filtered dataset
+- CSV downloads for sales channel and customer reports
+
+Existing pages/features from Phase 1–4 are preserved in this package.
+
+Run from this folder:
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+
+Important: observations are descriptive, rule-based summaries, not forecasts. Verify local behavior with your data before deployment.
